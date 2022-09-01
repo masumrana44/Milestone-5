@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add new Comment</title>
+</head>
+<body> 
+
+ <!-- <div id="comment-container">
+    <h1> Please Add your comment</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, deleniti corrupti aspernatur molestias tempora
+        nostrum sed autem repellendus magnam dicta id, veritatis hic maiores pariatur excepturi ab, nisi nesciunt! Quae,
+        impedit unde iusto laboriosam voluptates quasi ea ad possimus? Voluptas accusamus odio dolore quisquam! Quod qui
+        dolores illo ut architecto.</p>
+    <p>Officiis alias temporibus velit, ea cupiditate corporis perferendis magnam maiores nisi illum quas dolores ut
+        incidunt quidem blanditiis totam natus sequi! Veritatis commodi quas consequatur explicabo eaque magni quia sunt
+        ratione, reiciendis pariatur a esse, unde sit, officiis error mollitia odit cupiditate. Recusandae accusantium
+        incidunt id ea alias cumque sequi.</p>
+    <p>Nemo dolorem sapiente dolor debitis natus voluptates repellat, obcaecati voluptate mollitia aut quisquam excepturi
+        ipsum cumque molestiae voluptas incidunt! Omnis mollitia nam enim cumque incidunt rem fugiat ad deserunt, ipsam,
+        iste eveniet officiis quo vel cupiditate magni non dolorem! Assumenda quam culpa veritatis incidunt illo dolore
+        reprehenderit dicta tenetur officia.</p>
+ </div> -->
+
+
+<div id="feadback-container">
+<h1>Add Your valueable Feadback in the FeadBox</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente similique, ipsam harum aliquam perferendis explicabo porro deleniti vitae architecto esse totam ad asperiores nemo qui quae adipisci enim est quibusdam voluptatum, id dignissimos delectus facere! Natus eos fugiat enim aliquam id necessitatibus laudantium! At nemo magnam doloribus perspiciatis, cum dolores?</p>
+<p>Aperiam, nesciunt aliquam. Modi dolorem quam atque, adipisci, maxime recusandae ducimus eaque nulla repudiandae dolor repellat asperiores aliquam quod similique quaerat quas sequi placeat? Veritatis mollitia velit ea quo. Est impedit, laudantium dolor, dicta sequi, nulla mollitia placeat quis modi nesciunt sit numquam tenetur tempore vitae at labore veritatis. Dicta?</p>
+<p>Provident quibusdam voluptatem qui saepe porro beatae neque! Impedit, magnam a. Enim vero voluptatibus atque accusantium praesentium neque rerum et non, ea voluptatem pariatur quae provident earum debitis cumque saepe delectus ipsum porro itaque accusamus deleniti natus nemo quo corporis. Velit in repudiandae commodi sed repellendus suscipit doloremque iste nihil.</p>
+
+</div>
+
+
+<br>
+<br>
+<!-- 
+    <div>
+        <textarea name=" " id="comment-box" cols="65" rows="8"></textarea>
+        <br>
+        <button id="btn-post">Post</button>
+    </div> -->
+
+    <div>
+        <textarea name="" id="feadback-box" cols="70" rows="8"></textarea>
+        <br>
+        <button id="feadback-btn">Post</button>
+
+    
+    </div>
+</body>
+
+<script>
+//     // stem-1:add event listener to the post button 
+// document.getElementById('btn-post').addEventListener('click',
+// function(){
+//     // step-2:get the comment 
+//  const commentBox= document.getElementById('comment-box');
+//  const newComment=commentBox.value;
+//  console.log(newComment);
+    
+// //  step-3
+// const commentContainer=document.getElementById('comment-container');
+// const p=document.createElement('p');
+// p.innerText=newComment;
+// commentContainer.appendChild(p);
+//     // stop 4  clear the text area
+
+//     commentBox.value = '';
+
+// }
+
+// )
+
+// // step-1
+// document.getElementById('feadback-btn').addEventListener('click',
+// function(){
+//     // step-2
+//  const feadbackBox=document.getElementById('feadback-box')
+//   console.log(feadbackBox);
+//   const feadbackText=feadbackBox.value;
+
+// //  step-3
+// const feadbackContainer=document.getElementById('feadback-container');
+// const p=document.createElement('p');
+// p.innerText=feadbackText;
+// feadbackContainer.appendChild(p);
+// }
+
+// )
+
+// document.getElementById('feadback-btn').addEventListener('click',
+// function(){
+//  const feadbackBox=document.getElementById('feadback-box');
+//  const feadbackText=feadbackBox.value;
+
+
+//  const feadbackContainer=document.getElementById("feadback-container");
+//  const makeP=document.createElement('p');
+//  makeP.innerText=feadbackText;
+//  feadbackContainer.appendChild(makeP);
+
+
+// }
+
+// )
+
+
+// step1
+document.getElementById('feadback-btn').addEventListener('click',
+
+function(){
+    // step-2
+     const feadbackBox=document.getElementById('feadback-box');
+     const feadbackText=feadbackBox.value;
+// step-3
+     const feadbackConainer=document.getElementById('feadback-container');
+     const makeP=document.createElement('p');
+     makeP.innerText=feadbackText;
+
+     feadbackConainer.appendChild(makeP);
+
+}
+
+
+)
+
+
+
+
+</script>
+</html>

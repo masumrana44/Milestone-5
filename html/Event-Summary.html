@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event summary</title>
+    </head>
+
+    <body>
+        <!-- <p id="input-text-display">Default Input text</p>
+<input type="text" name="" id="input-field">
+<button id="bnt-
+update">Update</button> -->
+
+        <p id="input-text-display">Default value</p>
+        <input type="text" name="" id="input-field ">
+        <button id="btn-update">Update</button>
+        <br>
+        <br>
+
+        <h1 id="change-text">This is changable text</h1>
+        <button onclick="clickOn()">Cleck me</button>
+
+        <button id="event-lisenter">changeable</button>
+
+
+
+    </body>
+    <script>
+        // option 1
+        function clickOn() {
+            const haundelar = document.getElementById('change-text');
+            haundelar.innerText = 'HEllo World';
+
+        }
+
+        // option 2 
+        document.getElementById('event-lisenter').addEventListener('click',
+            function () {
+                const eventChange = document.getElementById('change-text');
+                eventChange.innerText = 'Hello Yes i Can change this !'
+            }
+        )
+
+        // option 2 recap 
+        // document.getElementById('bnt-update').addEventListener('click', 
+        // function(){
+        //     const inputField=document.getElementById('input-field');
+        //     console.log(inputField.value )
+        //     const inputText=inputField.value;
+        //     const p=document.getElementById('input-text-display')
+        //     p.innerText=inputText;
+        //    inputField.value='';
+        // }
+        // )
+
+        document.getElementById('btn-update').addEventListener('click',
+            function () {
+                const inputField = document.getElementById('input-field ')
+                const inputText = inputField.value;
+                const p = document.getElementById('input-text-display');
+                p.innerText = inputText;
+
+                inputField.value = '';
+
+            }
+        )
+
+
+    </script>
+
+</html>
